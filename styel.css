@@ -1,0 +1,458 @@
+.body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "rodape";
+    grid-template-rows: auto 85% auto ;
+    background-color: rgb(250, 249, 249);
+    
+    
+}
+.cabecalho{
+    background-image: url("banner.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    grid-area: cabecalho;
+    
+
+
+}
+.cabecalho-principal{
+    height: auto;
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    
+}
+.imagemLogo{
+    margin: 5px;
+}
+.cabecalho-menu{
+    margin-left: 2rem;
+}
+.cabecalhoPrincipal-nav-link{
+    font-size: 25px;
+    text-decoration: none;
+    margin: 1rem;
+    
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    height: 950px;
+    justify-content: space-evenly;
+    
+}
+.titulo-principal{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 2rem;
+    margin-top: 4rem;
+    font-family: 'Architects Daughter', cursive;
+    justify-content: center;
+  
+}
+.descricao{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 2rem;
+    width: 30%;
+}
+.botao-principal{
+    padding: 1rem;
+    align-self: flex-end;
+    margin: 5%;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: lightgray;
+    background-color: white;
+    color: blue;
+    font-size: large;
+    
+}
+.corpo{
+    grid-area: conteudo;
+   
+}
+.titulo-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 10%;
+    
+}
+.titulo-lista-principal{
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 35px;
+    margin: 2rem;
+}
+.titulo-lista-descricao{
+    font-size: 20px;
+    margin-bottom: 4rem;
+}
+.lista-pets-conteudo{
+    display: grid;
+    grid-template-columns: 26% 26% 26% 26%;
+    grid-template-rows: auto auto auto;
+    margin: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    
+}
+.card-lista-pets{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    
+
+   
+}
+.lista-pets-corpo{
+    padding: 1rem;
+}
+.lista-pets-titulo{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 1rem;
+}
+.lista-pets-descricao{
+    
+    font-size: 20px;
+}
+.lista-pets-button{
+    border: 1px solid white;
+    background-color: rgb(99, 99, 253);
+    border-radius: 0px 0px 15px 15px;
+    padding: 1rem;
+    font-size: 20px;
+    color: white;
+
+}
+.mais-lista-pets{
+    height: 4.5rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.mais-sobre-lista-pets{
+    width: 22%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(165, 62, 62);
+}
+.busca{
+    grid-area: conteudo;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    height: auto;
+    background: linear-gradient(360deg, lightblue 50%, rgb(250, 249, 249) 50%);
+   
+}
+.caixa-busca{
+    width: 75%;
+    height: auto;
+    background-color: rgb(145, 52, 145);
+}
+.titulo-filtro{
+    font-size: 35px;
+    font-weight: bold ;
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;}
+
+.descricao-filtro{
+    font-size: 20px;
+    color: white;
+    padding: 1rem;
+}
+.filtro{
+    width: 89%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto ;
+    grid-gap: 1rem;
+    padding: 3rem;
+    
+}
+.opcoes-filtro{
+    padding: 1rem;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.botao-filtro{
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem;
+    width: 15%;
+    color: white;
+    background-color: rgba(255, 255, 0, 0.767);
+    font-size: 20px;
+}
+.cadastro-img{
+    float: left;  
+    margin-left: 2rem;  
+}
+.cadastro{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 100% ;
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    background-color: lightblue;
+    
+    
+
+}
+.cadastro-card{
+    height: 100%;
+    grid-column: 2 / span 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cadasto-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cadastro-titulo{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 2rem;
+    padding-left: 0;
+    width: 75%;
+}
+.cadastro-descricao{
+    font-size: 25px;
+    padding: 2rem;
+    padding-left: 0;
+    width: 65%;
+}
+.cadastro-botao{
+    padding: 1.2rem;
+    background-color: rgb(165, 62, 62);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 45%
+    
+}
+.teste1{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: flex-end;
+    
+}
+.numeros{
+    width: 50%;
+}
+.lista-numeros{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 50% 50% ;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0 5rem 0 5rem ;
+    
+}
+.card-lista-numeros-1{
+    grid-column: 2 / 3;
+    align-self: flex-end;
+}
+.card-lista-numeros-2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.card-lista-numeros-3{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+.titulo-lista-numeros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    background-color:rgba(255, 255, 0, 0.74);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+
+}
+.descricao-lista-numeros{
+    font-size: 22px;
+    font-weight: 500;
+}
+.gato-contorno{
+    width: 45%;
+}
+.recomendacoes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 20%;
+    background-color: lightblue;
+}
+.titulo-recomendacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+.titulo-recomendacoes-principal{
+    font-size: 40px;
+    padding: 1rem;
+    font-weight:900;
+    font-family: 'Architects Daughter', cursive;
+
+}
+.descricao-recomendacoes{
+    font-size: 20px;
+    width: 50%;
+    
+}
+.lista-recomendacoes{
+    display: grid;
+    grid-template-columns: 22% 22% 22%;
+    grid-template-rows: 100% ;
+    height: 48%;
+    grid-gap: 5rem;
+    justify-content: center;
+
+}
+.card-lista-recomendacoes-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    background-image: url("C:/Users/T-Gamer/Desktop/logica-de-programação/trabalho-victor/drive-download-20210215T201537Z-001/Adotapet (3)/Rectangle 24.png"); 
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-color: white;
+     border-radius: 10px;
+     
+}
+.card-lista-recomendacoes-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    background-image: url("C:/Users/T-Gamer/Desktop/logica-de-programação/trabalho-victor/drive-download-20210215T201537Z-001/Adotapet (3)/Rectangle 24-1.png"); 
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-color: white;
+     border-radius: 10px;
+}
+.card-lista-recomendacoes-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    background-image: url("C:/Users/T-Gamer/Desktop/logica-de-programação/trabalho-victor/drive-download-20210215T201537Z-001/Adotapet (3)/Rectangle-23.png"); 
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-color: white;
+     border-radius: 10px;
+}
+.nome{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1rem;
+}
+.perfil{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.recomendacao{
+    width: 75%;
+    height: 150px;
+    font-size: 18px;
+    margin-top: 1rem;
+    align-self: center;
+    
+}
+.recomendacoes-img{
+    height: 15%;
+    width: 25%;
+    align-self: center;
+}
+.rodape{
+    grid-area: rodape;
+    
+}
+.info-rodape{
+    background-image: url(Background.png) ;
+    height: auto;
+}
+.lista-info-rodape{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    height: 80%
+    
+}
+.titulo-rodape{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1rem;
+    padding-left: 0;
+    border-bottom: 1px solid black;
+}
+.conteudo-rodape{
+    padding: 1rem;
+    padding-left: 0;
+
+}
+
+.item-info-rodape{
+    width: 20%;
+    height: 100%;
+    margin: 4rem;
+    font-size: 20px;
+    
+}
+.materia-blog{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.img-rodape{
+    width: 60%;
+    height: 60%;
+}
+.blog-conteudo{
+    font-size: 20px;
+    padding: 1rem;
+    padding-left: 0;
+}
+.titulo-blog{
+    font-weight: bold;
+    font-size: 20px;
+    padding: .5rem;
+    padding-left: 0;
+}
+.rodape-fim{
+    background: rgb(99, 99, 253);
+    display: flex;
+    justify-content: center;
+}
