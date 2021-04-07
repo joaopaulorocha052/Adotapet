@@ -6,18 +6,15 @@
     "conteudo"
     "rodape";
     grid-template-rows: auto 85% auto ;
-    background-color: rgb(250, 249, 249);
-    
-    
+    background-color: #faf9f9;
+
 }
+/* cabecalho */
 .cabecalho{
-    background-image: url("banner.png");
+    background-image: url("../ASSETS/banner.png");
     background-size: auto;
     background-repeat: no-repeat;
     grid-area: cabecalho;
-    
-
-
 }
 .cabecalho-principal{
     height: auto;
@@ -26,7 +23,6 @@
     display: flex;
     align-items: center;
     margin: 2rem;
-    
 }
 .imagemLogo{
     margin: 5px;
@@ -38,14 +34,12 @@
     font-size: 25px;
     text-decoration: none;
     margin: 1rem;
-    
 }
 .info{
     display:flex;
     flex-direction: column;
     height: 950px;
     justify-content: space-evenly;
-    
 }
 .titulo-principal{
     font-size: 70px;
@@ -54,7 +48,6 @@
     margin-top: 4rem;
     font-family: 'Architects Daughter', cursive;
     justify-content: center;
-  
 }
 .descricao{
     font-size: 25px;
@@ -68,15 +61,14 @@
     margin: 5%;
     border-width: 1px;
     border-radius: 15px;
-    border-color: lightgray;
-    background-color: white;
-    color: blue;
+    border-color: #d3d3d3;
+    background-color: #ffffff;
+    color: #0000ff;
     font-size: large;
-    
 }
+/* lista pets */
 .corpo{
     grid-area: conteudo;
-   
 }
 .titulo-lista{
     display: flex;
@@ -85,7 +77,6 @@
     align-content: center;
     text-align: center;
     height: 10%;
-    
 }
 .titulo-lista-principal{
     font-weight: bold;
@@ -99,23 +90,19 @@
 }
 .lista-pets-conteudo{
     display: grid;
-    grid-template-columns: 26% 26% 26% 26%;
+    grid-template-columns: repeat(4, 26%);
     grid-template-rows: auto auto auto;
     margin: 15%;
     margin-top: 1%;
     margin-bottom: 1%;
     grid-gap: 1.5rem;
     justify-content: center;
-    
 }
 .card-lista-pets{
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: white;
-    
-
-   
 }
 .lista-pets-corpo{
     padding: 1rem;
@@ -126,17 +113,15 @@
     margin: 1rem;
 }
 .lista-pets-descricao{
-    
     font-size: 20px;
 }
 .lista-pets-button{
     border: 1px solid white;
-    background-color: rgb(99, 99, 253);
+    background-color: #6363fd;
     border-radius: 0px 0px 15px 15px;
     padding: 1rem;
     font-size: 20px;
     color: white;
-
 }
 .mais-lista-pets{
     height: 4.5rem;
@@ -149,9 +134,10 @@
     font-size: 20px;
     font-weight: bold;
     border-radius: 25px;
-    color: white;
-    background-color: rgb(165, 62, 62);
+    color: #ffffff;
+    background-color: #a53e3e;
 }
+/* filtro de busca e cadastro*/
 .busca{
     grid-area: conteudo;
     height: auto;
@@ -160,25 +146,24 @@
     text-align: center;
     padding: 2rem;
     height: auto;
-    background: linear-gradient(360deg, lightblue 50%, rgb(250, 249, 249) 50%);
-   
+    background: linear-gradient(360deg, #add8e6 50%, #faf9f9 50%);
 }
 .caixa-busca{
     width: 75%;
     height: auto;
-    background-color: rgb(145, 52, 145);
+    background-color: #913491;
 }
 .titulo-filtro{
     font-size: 35px;
     font-weight: bold ;
     font-family: 'Architects Daughter', cursive;
-    color: white;
+    color: #ffffff;
     padding: 1rem;
-    margin-top: 1rem;}
-
+    margin-top: 1rem;
+}
 .descricao-filtro{
     font-size: 20px;
-    color: white;
+    color: #ffffff;
     padding: 1rem;
 }
 .filtro{
@@ -187,8 +172,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto ;
     grid-gap: 1rem;
-    padding: 3rem;
-    
+    padding: 3rem;   
 }
 .opcoes-filtro{
     padding: 1rem;
@@ -200,7 +184,7 @@
     padding: 1rem;
     margin: 2rem;
     width: 15%;
-    color: white;
+    color: #ffffff;
     background-color: rgba(255, 255, 0, 0.767);
     font-size: 20px;
 }
@@ -210,16 +194,13 @@
 }
 .cadastro{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: repeat(3, 33.33%);
     grid-template-rows: 100% ;
     height: 25rem;
     justify-content: center;
     align-items: center;
     padding: 10rem;
-    background-color: lightblue;
-    
-    
-
+    background-color: #add8e6;
 }
 .cadastro-card{
     height: 100%;
@@ -235,45 +216,41 @@
     font-family: 'Architects Daughter', cursive;
     font-weight: bold;
     font-size: 40px;
-    padding: 2rem;
-    padding-left: 0;
+    padding: 2rem 2rem 2rem 0;
     width: 75%;
 }
 .cadastro-descricao{
     font-size: 25px;
-    padding: 2rem;
-    padding-left: 0;
+    padding: 2rem 2rem 2rem 0;
     width: 65%;
 }
 .cadastro-botao{
     padding: 1.2rem;
-    background-color: rgb(165, 62, 62);
-    color: white;
+    background-color: #a53e3e;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
     width: 45%
-    
 }
+/* numeros de ongs */
 .teste1{
     display: flex;
     width: 100%;
     height: 15%;
     justify-content: flex-end;
-    
 }
 .numeros{
     width: 50%;
 }
 .lista-numeros{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: repeat(3, 33.33%);
     grid-template-rows: 50% 50% ;
     height: 100%;
     align-items: center;
     text-align: center;
     padding: 0 5rem 0 5rem ;
-    
 }
 .card-lista-numeros-1{
     grid-column: 2 / 3;
@@ -299,7 +276,6 @@
     width: 200px;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
-
 }
 .descricao-lista-numeros{
     font-size: 22px;
@@ -308,12 +284,13 @@
 .gato-contorno{
     width: 45%;
 }
+/* recomendacoes */
 .recomendacoes{
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 20%;
-    background-color: lightblue;
+    background-color: #add8e6;
 }
 .titulo-recomendacoes{
     display: flex;
@@ -321,58 +298,53 @@
     align-items: center;
     padding: 5rem;
 }
-
 .titulo-recomendacoes-principal{
     font-size: 40px;
     padding: 1rem;
     font-weight:900;
     font-family: 'Architects Daughter', cursive;
-
 }
 .descricao-recomendacoes{
     font-size: 20px;
     width: 50%;
-    
 }
 .lista-recomendacoes{
     display: grid;
-    grid-template-columns: 22% 22% 22%;
+    grid-template-columns: repeat(3, 22%);
     grid-template-rows: 100% ;
-    height: 48%;
+    height: 55%;
     grid-gap: 5rem;
     justify-content: center;
-
 }
 .card-lista-recomendacoes-1{
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
-    background-image: url("C:/Users/T-Gamer/Desktop/logica-de-programação/trabalho-victor/drive-download-20210215T201537Z-001/Adotapet (3)/Rectangle 24.png"); 
-     background-size: 100%;
-     background-repeat: no-repeat;
-     background-color: white;
-     border-radius: 10px;
-     
+    background-image: url("../ASSETS/drive-download-20210215T201537Z-001/Adotapet_(3)/Rectangle_24.png"); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 .card-lista-recomendacoes-2{
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
-    background-image: url("C:/Users/T-Gamer/Desktop/logica-de-programação/trabalho-victor/drive-download-20210215T201537Z-001/Adotapet (3)/Rectangle 24-1.png"); 
-     background-size: 100%;
-     background-repeat: no-repeat;
-     background-color: white;
-     border-radius: 10px;
+    background-image: url("../ASSETS/drive-download-20210215T201537Z-001/Adotapet_(3)/Rectangle_24-1.png"); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 .card-lista-recomendacoes-3{
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
-    background-image: url("C:/Users/T-Gamer/Desktop/logica-de-programação/trabalho-victor/drive-download-20210215T201537Z-001/Adotapet (3)/Rectangle-23.png"); 
-     background-size: 100%;
-     background-repeat: no-repeat;
-     background-color: white;
-     border-radius: 10px;
+    background-image: url("../ASSETS/drive-download-20210215T201537Z-001/Adotapet_(3)/Rectangle_23.png"); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 .nome{
     font-size: 25px;
@@ -389,47 +361,41 @@
     font-size: 18px;
     margin-top: 1rem;
     align-self: center;
-    
 }
 .recomendacoes-img{
     height: 15%;
     width: 25%;
     align-self: center;
 }
+/* rodape e enderecos */
 .rodape{
     grid-area: rodape;
-    
+    height: 15%;
 }
 .info-rodape{
-    background-image: url(Background.png) ;
+    background-image: url(../ASSETS/Background.png);
     height: auto;
 }
 .lista-info-rodape{
     display: flex;
     justify-content: flex-end;
     width: 95%;
-    height: 80%
-    
+    height: 80%;
 }
 .titulo-rodape{
     font-size: 30px;
     font-weight: bold;
-    padding: 1rem;
-    padding-left: 0;
-    border-bottom: 1px solid black;
+    padding: 1rem 1rem 1rem 0;
+    border-bottom: 1px solid #000000;
 }
 .conteudo-rodape{
-    padding: 1rem;
-    padding-left: 0;
-
+    padding: 1rem 1rem 1rem 0;
 }
-
 .item-info-rodape{
     width: 20%;
     height: 100%;
     margin: 4rem;
-    font-size: 20px;
-    
+    font-size: 20px;    
 }
 .materia-blog{
     display: flex;
@@ -442,17 +408,15 @@
 }
 .blog-conteudo{
     font-size: 20px;
-    padding: 1rem;
-    padding-left: 0;
+    padding: 1rem 1rem 1rem 0;
 }
 .titulo-blog{
     font-weight: bold;
     font-size: 20px;
-    padding: .5rem;
-    padding-left: 0;
+    padding: .5rem .5rem .5rem 0;
 }
 .rodape-fim{
-    background: rgb(99, 99, 253);
+    background: #6363fd;
     display: flex;
     justify-content: center;
 }
